@@ -25,11 +25,9 @@ pipeline
         
     }
     
-    post
-    {
-        always
-        {
-            emailext body: 'summary', subject: 'Pipeline status', to: 'kuttyspartan999@gmail.com'
+    post {
+        success {
+            archiveArtifacts 'target/*.jar'
         }
     }
 
