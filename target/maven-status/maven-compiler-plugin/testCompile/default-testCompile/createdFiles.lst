@@ -1,0 +1,3 @@
+TestCases\CalculatorTest.class
+TestCases\CalculatorTestWithJunit.class
+TestCases\RunWithJunitCore.class
