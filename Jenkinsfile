@@ -15,7 +15,7 @@ pipeline
             steps
             {
                 //Git repository
-                git 'https://github.com/kutty27/Build-Maven-Project.git'
+                git branch: "main", credentialsId: 'none', url: "https://github.com/kutty27/Build-Maven-Project.git"
 
                 //Run maven comnd
                 bat "mvn -Dmaven.test.failure.ignore=true clean package"
